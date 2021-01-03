@@ -9,7 +9,7 @@ import plotly.io as pio
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 from df_spotipy import *
-
+ 
 # PAGE TEMPLATE (title, icon, layout e sidebar)
 st.set_page_config(page_title="Analysis", page_icon=":waning_crescent_moon:", layout='centered', initial_sidebar_state='expanded')
 

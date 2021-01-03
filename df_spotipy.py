@@ -5,10 +5,10 @@ import time
 import numpy as np
 import pandas as pd
 import streamlit as st
-import config
+import spotify_keys
 
 
-client_credentials_manager = SpotifyClientCredentials(client_id=config.id, client_secret=config.secret)
+client_credentials_manager = SpotifyClientCredentials(client_id=spotify_keys.id, client_secret=spotify_keys.secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) # ACESSA A API
 
 @st.cache(suppress_st_warning=True)
