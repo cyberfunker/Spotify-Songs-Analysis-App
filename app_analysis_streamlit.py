@@ -3,7 +3,6 @@ import plotly.express as px
 import plotly.io as pio
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-from plotly.graph_objs import Layout
 from df_spotipy import *
 
 # PAGE TEMPLATE (title, icon, layout e sidebar)
