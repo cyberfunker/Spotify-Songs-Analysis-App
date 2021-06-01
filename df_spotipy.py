@@ -4,7 +4,7 @@ import time
 import pandas as pd
 import streamlit as st
 
-client_credentials_manager = SpotifyClientCredentials(client_id=SPOTIFY_ID, client_secret=SPOTIFY_SECRET)
+client_credentials_manager = SpotifyClientCredentials(client_id=st.secrets["SPOTIFY_ID"], client_secret=st.secrets["SPOTIFY_SECRET"])
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)  # ACCESS THE API
 
 
