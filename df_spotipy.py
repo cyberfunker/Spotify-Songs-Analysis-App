@@ -3,9 +3,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import time
 import pandas as pd
 import streamlit as st
-import spotify_keys
 
-client_credentials_manager = SpotifyClientCredentials(client_id=id, client_secret=secret)
+client_credentials_manager = SpotifyClientCredentials(client_id=SPOTIFY_ID, client_secret=SPOTIFY_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)  # ACCESS THE API
 
 
