@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 import spotify_keys
 
-client_credentials_manager = SpotifyClientCredentials(client_id=spotify_keys.id, client_secret=spotify_keys.secret)
+client_credentials_manager = SpotifyClientCredentials(client_id=id, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)  # ACCESS THE API
 
 
